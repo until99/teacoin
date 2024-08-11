@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- scripts -->
+  <script defer src="scripts/main.js"></script>
+
+  <title>Teacoin</title>
+</head>
+
+<body>
+  <header>
+    <a href="/index.html">Inicio</a>
+    <a href="/pages/tasks.html">Tasks</a>
+  </header>
+  <main>
+    <h2>Criar tarefa</h2>
+    <form action="#" id="task_form">
+      <div class="form_group">
+        <label for="task_title">Nome da Atividade:</label>
+        <input type="text" name="task_title" id="task_title" placeholder="Nome da Atividade">
+      </div>
+
+      <div class="form_group">
+        <label for="task_description">Descreva a Atividade:</label>
+        <textarea name="task_description" id="task_description" placeholder="Descreva a Atividade"></textarea>
+      </div>
+
+      <div class="task_steps_group">
+        <div class="add_steps">
+          <label for="task_add_step">Adicionar Etapa</label>
+          <button name="task_add_step" id="task_create_new_step_button">+</button>
+        </div>
+
+        <div id="task_steps_wrapper"></div>
+      </div>
+
+      <div class="form_group">
+        <label for="start_time">Horário de Inicio: </label>
+        <input type="time" name="start_time" id="task_start_time">
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+{
+  "module": "module",
+  "dependencies": {
+    "pocketbase": "^0.21.4"
+  }
+}
