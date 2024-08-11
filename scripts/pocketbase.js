@@ -20,7 +20,8 @@ async function fetchAllTasks() {
 
 function createTaskCard(task_id, task_title, task_description, task_start_time) {
     let task = document.createElement('a');
-    task.setAttribute('href', `pages/tasks/${task_id}`);
+    task.setAttribute('href', `/pages/tasks/${task_id}`);
+    task.setAttribute('class', 'task')
 
     let task_body = document.createElement('div');
     task_body.setAttribute('class', 'task_body');
