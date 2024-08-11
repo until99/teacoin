@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="styles/main.css">
 
   <!-- scripts -->
+  <script src="../node_modules/pocketbase/dist/pocketbase.umd.js"></script>
   <script defer src="scripts/main.js"></script>
+  <script defer src="scripts/tasks/create_task.js"></script>
 
   <title>Teacoin</title>
 </head>
@@ -21,7 +23,7 @@
   </header>
   <main>
     <h2>Criar tarefa</h2>
-    <form action="#" id="task_form">
+    <form action="/pages/tasks.html" id="task_form">
       <div class="form_group">
         <label for="task_title">Nome da Atividade:</label>
         <input type="text" name="task_title" id="task_title" placeholder="Nome da Atividade">
@@ -42,9 +44,11 @@
       </div>
 
       <div class="form_group">
-        <label for="start_time">Horário de Inicio: </label>
+        <label for="start_time">Horário de Inicio:</label>
         <input type="time" name="start_time" id="task_start_time">
       </div>
+
+      <button type="submit">Criar atividade</button>
     </form>
   </main>
 </body>

@@ -37,9 +37,7 @@ function taskCreateStep(step_id) {
 }
 
 // Add new step to task event
-create_task_step_button.addEventListener("click", (e) => {
-  e.preventDefault();
-
+create_task_step_button.addEventListener("click", () => {
   taskCreateStep(step_id);
   step_id += 1;
 })
