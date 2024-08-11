@@ -22,9 +22,17 @@ main {
 .task {
   display: flex;
   width: fit-content;
+
+  border: 2px solid cornflowerblue;
+  border-radius: 0.25rem;
+
+  padding: 1rem;
+}
+
+.task_header hr {
+  border: 1px solid cornflowerblue;
 }
 
 .task_body {
-  border: 1px solid cornflowerblue;
   width: 16rem;
 }

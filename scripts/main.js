@@ -1,6 +1,8 @@
+// DOM Elements
 let task_steps_wrapper = document.getElementById("task_steps_wrapper");
 let create_task_step_button = document.getElementById("task_create_new_step_button");
 
+// Step counter
 let step_id = 1;
 
 function taskCreateStep(step_id) {
@@ -34,6 +36,7 @@ function taskCreateStep(step_id) {
   task_steps_wrapper.appendChild(step_html);
 }
 
+// Add new step to task event
 create_task_step_button.addEventListener("click", (e) => {
   e.preventDefault();
 
