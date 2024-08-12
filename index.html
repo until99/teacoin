@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 
   <!-- styles -->
   <link rel="stylesheet" href="styles/main.css">
@@ -37,7 +38,7 @@
       <div class="task_steps_group">
         <div class="add_steps">
           <label for="task_add_step">Adicionar Etapa</label>
-          <button name="task_add_step" id="task_create_new_step_button">+</button>
+          <button name="task_add_step" type="button" id="task_create_new_step_button">+</button>
         </div>
 
         <div id="task_steps_wrapper"></div>
@@ -45,7 +46,7 @@
 
       <div class="form_group">
         <label for="start_time">Horário de Inicio:</label>
-        <input type="time" name="start_time" id="task_start_time">
+        <input type="datetime-local" name="start_time" id="task_start_time">
       </div>
 
       <button type="submit">Criar atividade</button>
